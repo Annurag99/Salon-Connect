@@ -71,7 +71,7 @@ to ALLOWED_HOSTS and CSRP_TRUSTED_ORIGINS inside the demo folder in the settings
 
 ```python
 python3 manage.py createsuperuser
-Username: anuragsingh
+Username: anurag
 Password: Admin@123
 ```
 # Demo & Screenshots
