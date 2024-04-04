@@ -76,3 +76,39 @@ Password: Admin@123
 ```
 # Demo & Screenshots
 
+Demo URL
+```python
+http://x23180013mysalon-env.eba-4wzwbr6m.eu-west-1.elasticbeanstalk.com/
+```
+Demo video URL
+```python
+youtube
+```
+Pages Screenshots
+
+Home
+
+<img width="1397" alt="Screenshot 2024-04-04 at 5 14 15 PM" src="https://github.com/Annurag99/Salon/assets/157478528/c62d6f78-4b03-46ac-b002-f487c91e1c4f">
+<img width="1397" alt="Screenshot 2024-04-04 at 5 14 29 PM" src="https://github.com/Annurag99/Salon/assets/157478528/21c46580-7a88-4baa-a9fa-16a6571e9b58">
+<img width="1397" alt="Screenshot 2024-04-04 at 5 14 39 PM" src="https://github.com/Annurag99/Salon/assets/157478528/f6fbd854-d69f-410d-bce4-f8feda129b2f">
+<img width="1397" alt="Screenshot 2024-04-04 at 5 15 00 PM" src="https://github.com/Annurag99/Salon/assets/157478528/1a248700-98ed-4344-869a-860dc5fe5a83">
+<img width="1397" alt="Screenshot 2024-04-04 at 5 15 09 PM" src="https://github.com/Annurag99/Salon/assets/157478528/f6aeb2d9-a515-4a95-ac5a-0a4e211e828f">
+
+Login
+
+<img width="1397" alt="Screenshot 2024-04-04 at 5 29 28 PM" src="https://github.com/Annurag99/Salon/assets/157478528/af49d824-e543-4978-8868-33215cf69823">
+
+Appointment Page
+
+<img width="1397" alt="Screenshot 2024-04-04 at 5 28 17 PM" src="https://github.com/Annurag99/Salon/assets/157478528/281f45cb-679b-4adf-a7c4-3ba46c4a1db8">
+
+Admin Page
+
+<img width="1397" alt="Screenshot 2024-04-04 at 5 29 44 PM" src="https://github.com/Annurag99/Salon/assets/157478528/782fb330-cfd7-404b-bdf2-87e891ed1765">
+
+
+
+
+
+
+
