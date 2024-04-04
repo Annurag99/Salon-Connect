@@ -5,13 +5,12 @@ phases:
       python: 3.11
     commands:
       - pip install --upgrade pip
-# Install dependencies needed for running the static analysis
       - pip install -r requirements.txt pylint
   pre_build:
     commands:
       - python --version
       - pylint $CODEBUILD_SRC_DIR/*.py
-      - pylint $CODEBUILD_SRC_DIR/job_hub/*.py
+      - pylint $CODEBUILD_SRC_DIR/salon_connect/*.py
 artifacts:
   files:
-    - '**/*'
+    - "**/*"
