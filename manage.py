@@ -9,7 +9,7 @@ def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'salon_connect.settings')
     try:
         execute_from_command_line(sys.argv)
-    except ImportError as exc:
+    except ImportError:
         print(
             "Couldn't import Django. Are you sure it's installed and "
             "available on your PYTHONPATH environment variable? Did you "
