@@ -1,4 +1,4 @@
-#!/home/ec2-user/environment/Salon-Connect/SalonConnect/env/bin/python3
+#!/Users/anuragsingh/Documents/GitHub/Salon/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

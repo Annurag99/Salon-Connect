@@ -46,23 +46,20 @@
                                     href="#services">Services</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active {% if " appointment" in request.path or "login" in request.path
-                                    or "manage-appointments" in request.path %} d-none {% endif %}" href="#team">Our
-                                    Artisans</a>
+                                <a class="nav-link active {% if 'appointment' in request.path or 'login' in request.path or 'manage-appointments' in request.path %} d-none {% endif %}"
+                                    href="#team">Artisans</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active {% if " appointment" in request.path or "login" in request.path
-                                    or "manage-appointments" in request.path %} d-none {% endif %}" href="#contact">Contact
-                                    Us</a>
+                                <a class="nav-link active {% if 'appointment' in request.path or 'login' in request.path or 'manage-appointments' in request.path %} d-none {% endif %}"
+                                    href="#reviews">Reviews</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active {% if " appointment" in request.path or "login" in request.path
-                                    or "manage-appointments" in request.path %} d-none {% endif %}" href="#reviews">Reviews</a>
+                                <a class="nav-link active {% if 'appointment' in request.path or 'login' in request.path or 'manage-appointments' in request.path %} d-none {% endif %}"
+                                    href="#contact">Contact Us</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active {% if " appointment" in request.path or "login" in request.path
-                                    or "manage-appointments" in request.path %} d-none {% endif %}" href="{% url 'login' %}">Log
-                                    In</a>
+                                <a class="nav-link active {% if 'appointment' in request.path or 'login' in request.path or 'manage-appointments' in request.path %} d-none {% endif %}"
+                                    href="{% url 'login' %}">Log In</a>
                             </li>
                             {% if request.user.is_authenticated %}
                             {% endif %}
