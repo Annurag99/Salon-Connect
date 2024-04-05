@@ -29,7 +29,7 @@
             background: rgb(177, 177, 177) url('../static/img/bg.jpg') no-repeat fixed top
             {% if " appointment" in request.path %} max-height: 100px !important; min-height: 100px !important;
             padding: 0 !important; color: black !important; img { display: none !important; } body { background-color: black
-            !important; } {% endif %} {% if "login" in request.path %} max-height: 100px !important; min-height: 100px
+            !important; } {% endif %} {% if "login" in request.path or 'appointment' in request.path %} max-height: 100px !important; min-height: 100px
             !important; padding: 0 !important; color: black !important; img { display: none !important; } body {
             background-color: black !important; } {% endif %} ">
             <nav class=" navbar navbar-dark navbar-expand-md navigation-clean-search">
