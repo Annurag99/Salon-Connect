@@ -1,7 +1,7 @@
-# Salon-Connect
+# SalonConnect
 
-Description: BeautySalonConnect is an appointment booking app for beauty salons, spas, and wellness centers. Users can schedule appointments for haircuts, massages, facials, and other beauty treatments, view stylist profiles, and receive notifications for upcoming appointments.
-Key Features: Appointment booking for beauty services, stylist profiles, service menus, real-time availability, appointment reminders, customer reviews, and ratings.
+SalonConnect is an appointment booking app for beauty salons, spas, and wellness centers. Users can schedule appointments for haircuts, massages, facials, and other beauty treatments and view stylist profiles.
+Key Features: Appointment booking for beauty services, stylist profiles, service menus, real-time availability, appointment reminders emails, customer reviews, and ratings.
 
 # Tech Stack
 ```python
