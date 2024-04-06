@@ -1,7 +1,4 @@
-{% extends 'base.html' %}
-
-{% block style %}
-
+<style>
 .card-margin {
 margin-bottom: 1.875rem;
 }
@@ -40,9 +37,15 @@ min-height: 50px;
 border-radius: calc(8px - 1px) calc(8px - 1px) 0 0;
 }
 
+.form-group {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
 .widget-49 .widget-49-title-wrapper {
 display: flex;
 align-items: center;
+padding: 2rem;
 }
 
 .widget-49 .widget-49-title-wrapper .widget-49-date-primary {
@@ -50,10 +53,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-background-color: currentColor;
-width: 6rem;
-height: 6rem;
-border-radius: 30%;
+background-color: black;
+width: 5rem;
+height: 5rem;
+margin-right: 1rem;
 }
 
 .widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-day {
@@ -64,7 +67,7 @@ line-height: 1;
 }
 
 .widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-month {
-color: #4e73e5;
+color: white;
 line-height: 1;
 font-size: 1rem;
 text-transform: uppercase;
@@ -82,7 +85,7 @@ border-radius: 50%;
 }
 
 .widget-49 .widget-49-title-wrapper .widget-49-date-secondary .widget-49-date-day {
-color: #dde1e9;
+color: white;
 font-weight: 500;
 font-size: 1.5rem;
 line-height: 1;
@@ -273,7 +276,6 @@ text-transform: uppercase;
 .widget-49 .widget-49-title-wrapper .widget-49-meeting-info {
 display: flex;
 flex-direction: column;
-margin-left: 1rem;
 }
 
 .widget-49 .widget-49-title-wrapper .widget-49-meeting-info .widget-49-pro-title {
@@ -290,6 +292,7 @@ font-size: 13px;
 font-weight: 400;
 font-size: 13px;
 margin-top: .5rem;
+padding-left: 2rem;
 }
 
 .widget-49 .widget-49-meeting-points .widget-49-meeting-item {
@@ -336,9 +339,11 @@ z-index: 3;
 outline: 0;
 box-shadow: none
 }
-{% endblock style %}
+</style>
 
-{% block content %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 {% if messages %}
 <div class="card notification-card notification-invitation">
@@ -353,15 +358,12 @@ box-shadow: none
 <div class="container mt-5">
   <div class="col-11 text-center mt-4 mb-4">
     <h3>
-      Streamline Your Salon's Appointment Management
+      Manage appointments
     </h3>
   </div>
   <div class="row">
 
     {% for app in appointments %}
-    <script>
-      console.log({{ app }});
-    </script>
     <div class="col-lg-4">
       <div class="card card-margin">
         <div class="card-header no-border">
@@ -381,8 +383,8 @@ box-shadow: none
               </div>
 
               <div class="widget-49-meeting-info">
-                <span class="widget-49-pro-title">{{app.email}}</span>
-                <span class="widget-49-meeting-time">{{app.phone}}</span>
+                <span class="widget-49-pro-title">Email: {{app.email}}</span>
+                <span class="widget-49-meeting-time">Mobile: {{app.phone}}</span>
               </div>
             </div>
             <div class="widget-49-meeting-points">
@@ -393,11 +395,13 @@ box-shadow: none
             <form method="POST" action="{% url 'manage' %}">
               {% csrf_token %}
               <div class="form-group">
-                <input type="date" name="date" class="form-control mb-2" placeholder="dd-mm-yyyy"
-                  value="{% if app.req_date %}{{ app.req_date|date:'Y-m-d' }}{% endif %}" min="1997-01-01"
+                <input type="date" name="date" class="form-control" placeholder="dd-mm-yyyy"
+                  value="{% if app.req_date %}{{ app.req_date|date:'Y-m-d' }}{% endif %}" min="2023-04-06"
                   max="2030-12-31">
                 <input hidden="true" name="appointment-id" value="{{app.id}}">
-                <input class="btn btn-outline-success form-control" type="submit" value="Accept">
+              </div>
+              <div class="form-group">
+                <button class="btn-success form-control" type="submit" value="Accept">Accept</button>
               </div>
             </form>
             {% endif %}
@@ -407,7 +411,9 @@ box-shadow: none
               <div class="form-group">
                 <input type="hidden" name="action" value="delete">
                 <input hidden="true" name="appointment-id" value="{{app.id}}">
-                <input class="btn btn-outline-danger form-control" type="submit" value="Delete">
+              </div>
+              <div class="form-group">
+                <button class="btn-danger form-control" type="submit" value="Delete">Delete</button>
               </div>
             </form>
             {% endif %}
@@ -437,5 +443,3 @@ box-shadow: none
   </div>
 
   {% endif %}
-
-  {% endblock content %}
