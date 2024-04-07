@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# Load environment variables from .env file
+# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("SECRET_KEY")
 SONAR_LOGIN_TOKEN = config('SONAR_LOGIN_TOKEN')
 
@@ -118,7 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / "static"
+STATIC_ROOT  = BASE_DIR / "static"
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
