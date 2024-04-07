@@ -1,3 +1,4 @@
+from decouple import config
 from django.http.response import HttpResponseRedirect
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -12,6 +13,10 @@ from django.template import Context
 from django.template.loader import render_to_string, get_template
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
+
+def index(request):
+    google_maps_api_key = config('GOOGLE_MAPS_API_KEY')
+    return render(request, 'index.html', {'google_maps_api_key': google_maps_api_key})
 
 def login_view(request):
     if request.method == 'POST':
