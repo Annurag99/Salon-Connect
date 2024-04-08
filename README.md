@@ -71,7 +71,7 @@ to ALLOWED_HOSTS and CSRP_TRUSTED_ORIGINS inside the demo folder in the settings
 
 ```python
 python3 manage.py createsuperuser
-Username: anurag
+Username: salonadmin
 Password: Admin@123
 ```
 # Demo & Screenshots
@@ -104,7 +104,8 @@ Appointment Page
 
 Admin Page
 
-<img width="1397" alt="Screenshot 2024-04-04 at 5 29 44 PM" src="https://github.com/Annurag99/Salon/assets/157478528/782fb330-cfd7-404b-bdf2-87e891ed1765">
+<img width="1208" alt="image" src="https://github.com/Annurag99/Salon-Connect/assets/157478528/6f9b0c23-f221-49b7-8a47-0ab77a55e04f">
+
 
 
 
