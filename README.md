@@ -82,7 +82,7 @@ http://x23180013mysalon-env.eba-4wzwbr6m.eu-west-1.elasticbeanstalk.com/
 ```
 Demo video URL
 ```python
-[youtube](https://youtu.be/7PAqRCsk11Q)
+https://youtu.be/7PAqRCsk11Q
 ```
 Pages Screenshots
 
