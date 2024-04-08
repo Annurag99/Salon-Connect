@@ -1,7 +1,7 @@
 # SalonConnect
 
-SalonConnect is an appointment booking app for beauty salons, spas, and wellness centers. Users can schedule appointments for haircuts, massages, facials, and other beauty treatments and view stylist profiles.
-Key Features: Appointment booking for beauty services, stylist profiles, service menus, real-time availability, appointment reminders emails, customer reviews, and ratings.
+SalonConnect is an appointment booking app for beauty salons, spas, and wellness centers. Users can schedule appointments for haircuts, massages, facials, specialized  beauty services, and view stylist profiles.
+Key Features: Appointment booking for beauty services, appointment rescheduling, stylist profiles, service menus, real-time availability, appointment emails, customer reviews, and ratings.
 
 # Tech Stack
 ```python
@@ -82,7 +82,7 @@ http://x23180013mysalon-env.eba-4wzwbr6m.eu-west-1.elasticbeanstalk.com/
 ```
 Demo video URL
 ```python
-youtube
+[youtube](https://youtu.be/7PAqRCsk11Q)
 ```
 Pages Screenshots
 
